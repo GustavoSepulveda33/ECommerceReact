@@ -1,0 +1,154 @@
+
+
+
+
+
+html {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+
+
+/* HERO  */
+
+#contactHero {
+
+    background-image: url(/public/Images/Images/ManleyVoxbox/voxbox-sauce-circuitry.webp);
+    background-size: cover;
+    background-color: #0B2D41;
+    background-blend-mode: lighten;
+    color: #EEF6FC;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 130vh;
+    width: 100%;
+
+
+}
+
+
+/* FORM */
+.jobFormContainer, p {
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.jobForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+.jobFormContainer {
+
+    position: relative;    
+
+
+}
+
+/* INPUT LABELS */
+.label {
+    font-size: 2.5rem;
+    color: #EEF6FC;
+    font-weight: bolder;
+
+}
+
+/* EMAIL / NAME  */
+#email, #name1 {
+    padding: 1rem;
+    width: 70vw;
+}
+
+/* UPLOAD FILE */
+#upload-file {
+    padding: 1rem;
+}
+
+#upload-file {
+
+    cursor: pointer;
+
+}
+
+/* SUBMIT BUTTON */
+.submit-button {
+    padding: 1rem;
+    width: 70vw;
+    background-color: #0B2D41;
+    color: #EEF6FC;
+    font-size: 1.5rem;
+}
+
+.submit-button:hover {
+
+    cursor: pointer;
+    background-color: #c99418;
+    color: #0B2D41;
+
+}
+
+/* TEXTAREA */
+textarea {
+
+    width: 72vw;
+    height: 10vh;
+    color: gray;
+
+}
+
+
+
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES  */
+
+@media only screen and (max-width: 768px) {
+
+
+    #contactHero {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        height: 180vh;
+        width: 100%;
+    
+    
+    }
+
+
+/* FOOTER */
+
+.footerAdditionalContent {
+
+    display: none;
+
+}
+
+.footerContainer {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+}
+
+

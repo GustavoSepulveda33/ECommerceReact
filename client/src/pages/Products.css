@@ -1,0 +1,868 @@
+
+
+
+
+html {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN*/
+
+.proProductCard, .homeProductCard {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+
+    background-color: #EBEBEB;
+
+    border-color: #0B2D41;
+    border-width: 1rem;
+    border-style: solid;
+
+
+}
+
+
+
+.productIMG {
+
+    height: 50vh;
+    width: 100vw;
+
+    aspect-ratio: 3/2;
+    object-fit: contain;
+
+    padding: 0;
+    margin-bottom: 0;
+
+    mix-blend-mode: multiply;
+
+
+}
+
+.productTitle {
+
+    font-size: 4rem;
+    padding: 0;
+    margin-top: 50px;
+
+}
+
+.productDesc {
+
+    font-size: 1.5rem;
+    width: 50vw;
+
+    margin: 0;
+
+}
+
+
+.btnContainer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.showMoreBTN, .add2CartBTN {
+
+    font-size: 1.5rem;
+    width: 15vw;
+
+    background-color: #0B2D41;
+    color: white;
+
+}
+
+
+
+
+main {
+
+    width: 100%;
+
+}
+
+
+
+#searchSection {
+
+    height: 50vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+
+}
+
+.searchBTN {
+
+    width: 15vw;
+    height: 10vh;
+    font-size: 2rem;
+
+    background-color: #0B2D41;
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+
+.extraContainer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 30vw;
+
+}
+
+.extraPhotos {
+
+    height: 10vh;
+    width: 10vw;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+
+    transition: 1s;
+
+}
+
+.extraPhotos:hover {
+
+    height: 30vh;
+    width: 30vw;
+
+
+}
+
+
+/* HERO HERO HERO */
+#heroSection {
+
+    max-width: 100%;
+
+
+}
+
+.heroContainer {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    
+    background-image: url(/public/Images/Images/MXR-Small-Pic.png);
+    background-size: contain;
+    background-color: #EBEBEB;
+    background-blend-mode: multiply;
+
+    height: 90vh;
+    width: 100%;
+
+
+}   
+
+
+.heroText {
+
+    display: flex;
+    align-items: center;
+
+    padding: 2rem;
+    background-color: #0B2D41;
+    
+    color: #EEF6FC;
+    font-size: 3rem;
+    /* margin: 1rem; */
+    margin-right: 0;
+    text-align: center;
+    letter-spacing: 0.5vw;
+
+    height: 20vh;
+    width: 60%;
+
+}
+
+
+
+/* in-page nav */
+.productsInnerNav {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    list-style: none;
+    color: white;
+
+
+    padding: 3rem;
+
+
+}
+
+
+.InnerNav-item {
+
+    text-decoration: none;
+    border-style: solid;
+    border-color: #0B2D41;
+    border-width: 0.2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+    
+    width: 20vw;
+
+}
+
+
+.InnerNav-item a {
+
+    color: #0B2D41;
+
+}
+
+
+
+.InnerNav-item:hover {
+
+    background-color: #c99418;
+
+}
+
+
+
+
+/* Guide Guide Guide Guide Guide */
+
+#guideContainer {
+
+    background-color: #0B2D41;
+    position: fixed;
+    transform: rotate(90deg);
+    right: -170px;
+    top: 70vh;
+    padding: 0; 
+
+    z-index: 1;
+
+} 
+
+#guideContainer2 {
+
+    background-color: #0B2D41;
+    position: fixed;
+    transform: rotate(90deg);
+    right: -128px;
+    top: 20vh;
+    padding: 0; 
+
+    z-index: 1;
+
+} 
+
+
+
+
+
+#guide {
+
+    
+    font-size: 1.5rem;
+    margin-top: 0;
+
+
+
+    background-color: #0B2D41;
+    color: #EBEBEB;
+    padding: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 0;
+
+
+    border-color: #EBEBEB;
+    border-style: solid;
+    border-width: 0.3rem;
+
+    display: flex;
+    flex-direction: row;
+
+
+    transition: all 1s;
+
+} 
+
+/* second pop up guide bar `previous section` */
+#guide2 {
+
+    
+    font-size: 1.5rem;
+    margin-top: 0;
+
+
+
+    background-color: #0B2D41;
+    color: #EBEBEB;
+    padding: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 0;
+
+
+    border-color: #EBEBEB;
+    border-style: solid;
+    border-width: 0.3rem;
+
+    display: flex;
+    flex-direction: row;
+
+
+    transition: all 1s;
+
+} 
+
+.back2Top {
+
+    color: #EBEBEB;
+    
+
+}
+
+
+.back2Top:hover {
+
+    background-color: #EEF6FC;
+    color: #0B2D41;
+    padding: 0.5rem;
+
+}
+
+
+
+
+
+/* PRO-AUDIO PRO-AUDIO PRO-AUDIO PRO-AUDIO PRO-AUDIO PRO-AUDIO */
+
+
+#proAudioSection {
+    
+    text-align: center;
+
+    width: 100%;
+
+
+}
+
+
+/* PRO AUDIO INTRO */
+
+.proIntro {
+
+    background-color: #EBEBEB;
+    background-image: url(/public/Images/Images/Roland-Sauce1.png);
+    background-size: cover;
+    background-blend-mode: multiply;
+    
+    text-align: center;
+
+    height: 70vh;
+    max-width: 98vw;
+
+    transform: scaleX(-1);
+
+    padding: 1rem;
+
+}
+
+
+
+
+.proSub {
+
+    color: #0B2D41;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: #EBEBEB;
+
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 1rem;
+
+    box-shadow: 10px 0px 10px 0px #0B2D41;
+
+
+    transform: scaleX(-1);
+
+}
+
+
+
+
+
+/* PRO-AUDIO PRODUCTS | PRO-AUDIO PRODUCTS | PRO-AUDIO PRODUCTS | PRO-AUDIO PRODUCTS |*/
+
+
+/* Product container universal (pro and home audio) */
+#test {
+
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+
+    /* background-color: #BEC5AD; */
+
+    height: 100vh;
+    
+}
+
+
+
+
+/* HOME-AUDIO HOME-AUDIO HOME-AUDIO HOME-AUDIO HOME-AUDIO HOME-AUDIO */
+
+#homeAudioSection {
+    
+    text-align: center;
+
+    width: 100%;
+
+
+}
+
+
+
+/* HOME AUDIO INTRO */
+.homeIntro {
+
+    background-color: #cca4e8;
+    background-image: url(/public/Images/Images/PedalBackground.jpeg);
+    background-size: contain;
+    background-blend-mode: multiply;
+    
+    text-align: center;
+
+    height: 70vh;
+    max-width: 98vw;
+
+    transform: scaleX(-1);
+
+    padding: 1rem;
+
+}
+
+
+.Banner { 
+
+    padding: 3rem;
+
+    font-size: 8rem;
+    color: #EEF6FC;
+    background-color: #0B2D41;
+    text-decoration: underline;
+
+    box-shadow: 10px 0px 10px 0px #EEF6FC;
+
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    transform: scaleX(-1);
+    
+}
+
+.homeSub {
+
+    color: #0B2D41;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: #EBEBEB;
+
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 1rem;
+
+    box-shadow: 10px 0px 10px 0px #0B2D41;
+
+
+    transform: scaleX(-1);
+
+}
+
+
+
+
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES  */
+
+@media only screen and (max-width: 768px) {
+
+
+.heroText {
+
+    display: flex;
+    align-items: center;
+
+    padding: 2rem;
+    background-color: #0B2D41;
+    
+    color: #EEF6FC;
+    font-size: 2rem;
+    /* margin: 1rem; */
+    margin-right: 0;
+    text-align: center;
+    letter-spacing: 0.5vw;
+
+    height: 20vh;
+    width: 60%;
+
+}
+
+
+#searchSection {
+
+    height: 50vh;
+    width: 80vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 2rem;
+
+    gap: 20px;
+
+
+}
+
+
+.searchBTN {
+
+    width: 25vw;
+    height: 10vh;
+    font-size: 1rem;
+
+    background-color: #0B2D41;
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+.productIMG {
+
+    height: 50vh;
+    width: 80vw;
+
+    aspect-ratio: 3/2;
+    object-fit: contain;
+
+    padding: 0;
+    margin-bottom: 0;
+
+    mix-blend-mode: multiply;
+
+
+}
+
+.extraContainer {
+
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.extraPhotos {
+
+    height: 20vh;
+    width: 30vw;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+
+    transition: 1s;
+
+}
+
+.extraPhotos:hover {
+
+    height: 30vh;
+    width: 30vw;
+
+    /* transition: 1s; */
+}
+
+.productTitle {
+
+    font-size: 1.5rem;
+
+}
+
+.productDesc {
+
+    width: 80vw;
+    font-size: 1rem;
+
+}
+
+.add2CartBTN {
+
+    width: 30vw;
+    font-size: 1rem;
+
+}
+
+
+
+
+.proIntro {
+
+    height: 80vh;
+    max-width: 250vw;
+
+}
+
+
+h1 { 
+
+    padding: 3rem;
+    font-size: 5rem;
+
+}
+
+.proSub {
+
+
+    font-size: 1rem;
+}
+
+
+
+
+/* PRODUCT SLIDES */
+
+.productName {
+
+    font-size: 3rem;
+
+}
+
+
+.price {
+
+    font-size: 1.5rem;
+
+}
+
+.description {
+
+    font-size: 1.3rem;
+    max-width: 700px;
+    text-align: center;
+
+}
+
+
+
+/* HOME AUDIO INTRO */
+
+.homeIntro {
+
+    height: 100vh;
+    max-width: 230vw;
+
+}
+
+
+
+
+.homeSub {
+
+    color: #0B2D41;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: #EBEBEB;
+
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 2rem;
+
+    box-shadow: 10px 0px 10px 0px #0B2D41;
+
+
+    transform: scaleX(-1);
+
+}
+
+
+/* FOOTER */
+
+.footerAdditionalContent {
+
+    display: none;
+
+}
+
+.footerContainer {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #searchSection {
+
+        height: 50vh;
+        width: 90vw;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+        padding: 2rem;
+    
+        gap: 20px;
+    
+    
+    }
+    
+    
+    .searchBTN {
+    
+        width: 25vw;
+        height: 10vh;
+        font-size: 1rem;
+    
+        background-color: #0B2D41;
+        color: white;
+    
+        cursor: pointer;
+    
+    }
+    
+    
+    .productIMG {
+    
+        height: 70vh;
+        width: 70vw;
+    
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    
+        padding: 0;
+        margin-bottom: 0;
+    
+        mix-blend-mode: multiply;
+    
+    
+    }
+    
+    .extraContainer {
+    
+        flex-direction: column;
+        gap: 5px;
+    
+    }
+    
+    .extraPhotos {
+    
+        height: 20vh;
+        width: 30vw;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        mix-blend-mode: multiply;
+    
+        transition: 1s;
+    
+    }
+    
+    .extraPhotos:hover {
+    
+        height: 30vh;
+        width: 30vw;
+    
+        /* transition: 1s; */
+    }
+    
+    .productTitle {
+    
+        font-size: 3rem;
+    
+    }
+    
+    .productDesc {
+    
+        width: 80vw;
+        font-size: 1.5rem;
+    
+    }
+    
+    .add2CartBTN {
+    
+        width: 30vw;
+        font-size: 1rem;
+    
+    }
+
+
+}
+
+
+
+
+
+
+
+
+

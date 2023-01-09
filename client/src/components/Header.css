@@ -1,0 +1,160 @@
+
+
+
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER */
+
+header {
+
+    background-color: #EEF6FC;
+    padding: 1rem;
+
+    height: 100px;
+    
+}
+
+/* NAV BAR */
+nav {
+
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+nav ul {
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    margin-top: -0.7%;
+    gap: 2rem;
+    
+
+}
+
+.nav-item {
+
+    text-decoration: none;
+    color: #0B2D41;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+
+    transition: 400ms;
+
+}
+
+a:hover {
+
+    text-decoration: line-through;
+
+}
+
+
+
+li:hover {
+
+    cursor: pointer;
+
+}
+
+
+/* LOGO LOGO LOGO LOGO */
+
+.logo {
+
+    background-image: url(/public/Images/Images/rsz_m.jpg);
+    background-color: #EEF6FC ;
+    background-blend-mode: multiply;
+    background-size: cover;
+
+    height: 100px;
+    width: 100px;
+
+    
+    top: 5px;
+    left: 40px;
+
+    position: relative;
+
+}
+
+
+.logo:hover {
+
+    cursor: pointer;
+
+}
+
+
+
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+
+
+    /* Header Header Header  */
+    
+    
+    header {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 50vh;
+        align-items: center;
+
+    }
+
+    .logo {
+
+        left: 20px;        
+
+
+    }
+    
+    nav {
+    
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+    
+        gap: 10px;
+        
+    }
+    
+    
+    
+    nav ul {
+    
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    
+        /* margin-top: -0.7%;
+        gap: 2rem; */
+        
+    
+    }
+    
+    .nav-item {
+    
+        text-decoration: none;
+        color: #0B2D41;
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: bolder;
+        letter-spacing: 0.3rem;
+    
+        transition: 400ms;
+    
+    }
+}    
+

@@ -1,0 +1,640 @@
+
+
+
+
+/* BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    font-family: didot, monospace;
+    background-color: #EBEBEB;
+}
+
+
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN*/
+
+main {
+
+    background-image: url(/public/Images/Images/PultecGraph.png);
+    background-color: #EBEBEB;
+    background-blend-mode: lighten;
+    background-size: cover;
+
+
+}
+
+/* MAIN-PAGE HERO */
+
+#hero {
+
+    
+    height: 40vh;
+    width: auto;
+    padding: 1rem;
+
+    z-index: 1;
+
+}
+
+
+
+
+ /* Company Name */
+.Market {  
+
+    font-size: 8rem;
+    text-align: center;
+    letter-spacing: 1.5rem;
+    color: #0B2D41;
+    margin-bottom: 0;
+    margin-top: 3rem;
+
+}
+
+/* hero sub title */
+.subName {
+
+    font-size: 2.5rem;
+    /* font-style: italic; */
+    text-align: center;
+    padding: 1rem;
+    color: #0B2D41;
+    margin-top: 0.2rem;
+    font-weight: 400;
+
+
+
+}
+
+
+
+/* PRODUCT CATEGORY BOXES | PRODUCT CATEGORY BOXES | PRODUCT CATEGORY BOXES | PRODUCT CATEGORY BOXES */
+
+#prodCatBoxes {
+
+    box-shadow: 10px 0px 10px 0px #0B2D41;
+    
+    margin-top: 10vh;
+
+}
+
+
+.boxes {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #0B2D41;
+
+}
+
+/* PRO AUDIO BOX */
+.box1 { 
+
+    background-image: url(/public/Images/Images/ManleyVoxbox/voxbox-circuitry-shot.webp);
+    background-size: cover;
+    background-color: #EEF6FC;
+    background-blend-mode: multiply;
+    padding: 12rem;
+
+
+    height: 30vh;
+    width: 15vw;
+
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+
+}
+
+/* HOME AUDIO BOX */
+.box2 { 
+
+    background-image: url(/public/Images/Images/Headphones.png);
+    background-size: cover;
+    background-color: #0B2D41;
+    color: black;
+    padding: 12rem;
+
+    height: 30vh;
+    width: 15vw;
+
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+
+}
+
+
+.box1:hover, .box2:hover {
+
+    box-shadow: 10px 10px 10px 0 #EEF6FC;
+
+    background-color: #0B2D41;
+    background-blend-mode: lighten;
+    
+    cursor: pointer;
+
+}
+
+/* BOX LABELS */
+.description {
+
+    background-color: #c99418;
+    width: 20vw;
+    font-size: 4rem;
+    color: #EBEBEB;
+    text-align: center;
+
+    padding-left: 8rem;
+
+}
+
+
+
+
+
+
+/* HOME ABOUT US LINK OFF | HOME ABOUT US LINK OFF | HOME ABOUT US LINK OFF | HOME ABOUT US LINK OFF | HOME ABOUT US LINK OFF |  */
+
+#aboutUsBox {
+
+    background-image: url(/public/Images/Images/tube.png);
+    background-color: #0b2d41a5;
+    background-blend-mode: multiply;
+    background-size: contain;
+
+    height: 60vh;
+    width: 100%;
+    
+    margin-top: 0;
+
+
+    box-shadow: 10px 0px 10px 0px #0B2D41;
+
+    margin-bottom: 3rem;
+
+
+}
+
+.homeAboutUs {
+
+    color: #EEF6FC;
+    text-align: center;
+    font-size: bolder;
+
+    font-size: 2.5rem;
+    padding: 5rem;
+
+}
+
+
+
+/* HOME CONTACT LINK OFF | HOME CONTACT LINK OFF | HOME CONTACT LINK OFF | HOME CONTACT LINK OFF | HOME CONTACT LINK OFF | */
+
+#contactUsHome {
+
+    background-image: url(/public/Images/Images/ManleyVoxbox/voxbox-circuitry-shot-2.webp);
+    background-size: contain;
+
+    height: 80vh;
+    width: 100%;
+
+    box-shadow: 10px 0px 10px 0px #0B2D41;
+
+}
+
+
+.homeContactContainer {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.colorOverlay {
+
+    position: absolute;
+    background-color: #0B2D41;
+
+    width: 50%;
+    height: 80vh;
+
+    transform: skew(15deg);
+    right: 10%;
+
+
+}
+
+.colorOverlay2 {
+
+    position: absolute;
+    background-color: #0B2D41;
+
+    width: 50%;
+    height: 80vh;
+
+    right: 0;
+
+}
+
+
+.homeContactText {
+
+    color: #EEF6FC;
+
+}
+
+.homeContactText {
+
+    font-size: 1.8rem;
+    padding: 1rem;
+    padding-top: 2rem;
+
+    padding-right: 0;
+    margin-right: 0;
+    position: relative;
+
+    text-align: right;
+    line-height: 250%;
+    z-index: 100;
+
+    width: 60vw;
+    right: 0;
+    left: 38%;
+    
+
+}
+
+
+
+
+
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES  */
+
+
+@media only screen and (max-width: 768px) {
+
+
+
+
+/* MAIN-PAGE HERO */
+
+#hero {
+
+    
+    height: 40vh;
+    width: auto;
+    padding: 1rem;
+    text-align: center;
+
+
+    padding-bottom: 5rem;
+
+}
+
+
+ /* Company Name */
+.Market {  
+
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    color: #0B2D41;
+    margin-bottom: 0;
+    margin-top: 3rem;
+
+
+}
+
+/* hero sub title */
+.subName {
+
+    font-size: 1.5rem;
+    /* font-style: italic; */
+    text-align: center;
+    padding: 1rem;
+    color: #0B2D41;
+    margin-top: 0.2rem;
+    font-weight: 400;
+
+
+
+}
+
+
+
+
+/* HOME ABOUT US  */
+
+#aboutUsBox {
+
+    height: 35vh;
+
+}
+
+
+.homeAboutUs {
+
+    font-size: 1.2rem;
+    padding: 1.8rem;
+
+}
+
+
+.warpToProducts {
+
+    border-style: solid;
+    border-color: #EEF6FC;
+    border-radius: 55%;
+    border-width: 0.3rem;
+
+
+    padding: 0.5rem;
+
+    font-size: 0.9rem;
+
+}
+
+
+
+/* Contact Home Contact Home */
+
+#contactUsHome {
+
+    height: 60vh;
+    width: 100%;
+
+}
+
+.homeContactContainer {
+
+    overflow: hidden;
+
+}
+
+.colorOverlay {
+
+    position: absolute;
+    /* background-color: #0B2D41; */
+
+    width: 50%;
+    height: 60vh;
+
+    transform: skew(10deg);
+    right: 15%;
+    /* padding-right: 6rem; */
+    
+    
+
+
+}
+
+.colorOverlay2 {
+
+    position: absolute;
+    /* background-color: #0B2D41; */
+
+    width: 50%;
+    height: 60vh;
+
+    /* transform: skew(15deg); */
+    right: 0;
+    /* padding-right: 6rem; */
+    
+    
+
+
+}
+
+
+.homeContactText {
+
+    font-size: 1rem;
+    padding: 1rem;
+    padding-top: 2rem;
+
+    text-align: center;
+    line-height: 180%;
+
+}
+
+
+.footerAdditionalContent {
+
+    display: none;
+
+}
+
+
+
+.footerContainer {
+
+    display: flex;
+    flex-direction: column-reverse;
+    
+    gap: 5vh;
+
+}
+
+
+.footerLabel {
+
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: #0B2D41;
+    text-align: center;
+    padding: 0.5rem;
+
+    /* padding-left: 1.5rem;
+    padding-right: 1.5rem; */
+    margin-bottom: 0.5rem;
+
+}
+
+.footerList-item {
+
+    font-size: 1.5rem;
+    color: #0B2D41;
+
+    text-decoration: none;
+
+
+
+
+}
+
+
+/* CATEGORY BOXES CATEGORY BOXES CATEGORY BOXES */
+
+#prodCatBoxes {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+
+
+}
+
+
+.boxes {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    /* padding: 2rem; */
+    background-color: #0B2D41;
+
+
+    
+
+}
+
+.box1 { 
+
+    height: 30vh;
+    width: 70vw;
+
+    padding: 1rem;
+    right: 0;
+
+    margin-left: 5px;
+
+
+}
+
+
+.box2 { 
+
+    padding: 1rem;
+
+    height: 30vh;
+    width: 70vw;
+
+    margin-left: 5px;
+
+
+}
+
+.box1:hover, .box2:hover {
+
+    box-shadow: 10px 10px 10px 0 #EEF6FC;
+
+    background-color: #0B2D41;
+    background-blend-mode: lighten;
+    
+    cursor: pointer;
+
+}
+
+
+.description {
+
+    background-color: #c99418;
+    width: 40vw;
+    font-size: 2rem;
+    color: #EBEBEB;
+    /* text-align: right; */
+
+    padding-left: 8rem;
+
+}
+
+
+}
+
+
+@media only screen and (max-width: 375px) {
+
+
+    .logo {
+    
+        top: 5px;
+        /* left: %; */
+    
+    }
+
+
+}
+
+
+@media only screen and (max-width: 425px) {
+
+
+    .logo {
+    
+        top: 5px;
+        left: 37%;
+    
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .nav-bar {
+
+        display: block;
+
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+
+
+
+
+    nav {
+
+        display: block;
+        justify-content: flex-end;
+
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    
+
+    #prodCatBoxes {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100vw;
+
+    }
+    .boxes {
+
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: center;
+
+        background-color: #0B2D41;
+    
+    
+        
+    
+    }
+
+}
+
+
+
+
+
